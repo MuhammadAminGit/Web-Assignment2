@@ -10,6 +10,7 @@ import Footer from './Components/Footer';
 import BarChart from './Components/BarChart';
 import TestimonialCarousel from './Components/TestimonialCarousel';
 import Menu from './Components/Menu';
+import DashboardTable from './Components/DashboardTable';
 
 const componentsList = [
   { name: 'Navbar', component: Navbar },
@@ -24,6 +25,7 @@ const componentsList = [
   {name : 'Bar Chart', component: BarChart},
   {name : 'Testimonial Carousel', component: TestimonialCarousel},
   {name : 'Menu', component: Menu},
+  {name : 'Dashboard Table', component: DashboardTable},
 
 ];
 
