@@ -7,6 +7,7 @@ import PieChart from './Components/PieChart';
 import Sidebar from './Components/Sidebar';
 import ProfileCard from './Components/ProfileCard';
 import Footer from './Components/Footer';
+import BarChart from './Components/BarChart';
 
 const componentsList = [
   { name: 'Navbar', component: Navbar },
@@ -18,6 +19,7 @@ const componentsList = [
   {name : 'Sidebar', component: Sidebar},
   {name : 'Profile Card', component: ProfileCard},
   {name : 'Footer', component: Footer},
+  {name : 'Bar Chart', component: BarChart},
 
 ];
 
