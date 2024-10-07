@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import Navbar from './Components/Navbar';
 import Card from './Components/Card';
+import LineChart from './Components/LineChart';
+import Calendar from './Components/Calendar';
 
 const componentsList = [
   { name: 'Navbar', component: Navbar },
   {name : 'Notifications Dropdown', component: Navbar},
-  {name : 'Card', component: Card}
+  {name : 'Card', component: Card},
+  {name : 'Line Chart', component: LineChart},
+  {name : 'Calendar', component: Calendar},
+
 ];
 
 const App = () => {
