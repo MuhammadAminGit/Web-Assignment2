@@ -1,35 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react';
+import Navbar from './Components/Navbar';
+// Add other components here as needed
+// e.g., import Component3 from './Components/Component3';
 
-function App() {
-  const [count, setCount] = useState(0)
+const componentsList = [
+  { name: 'Navbar', component: Navbar },
+  {name : 'Notifications Dropdown', component: Navbar},
+  // Add other components here as needed
+];
+
+const App = () => {
+  const [activeComponent, setActiveComponent] = useState(null);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="p-4">
+      {/* Button Layout */}
+      <div className="flex space-x-4 mb-8">
+        {componentsList.map(({ name }, index) => (
+          <button
+            key={index}
+            onClick={() => setActiveComponent(name)}
+            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+          >
+            {name}
+          </button>
+        ))}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
 
-export default App
+      {/* Display Active Component */}
+      <div className="p-4 border rounded shadow-md bg-gray-100">
+        {activeComponent ? (
+          React.createElement(
+            componentsList.find(({ name }) => name === activeComponent).component
+          )
+        ) : (
+          <p className="text-gray-500">Select a component to display</p>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default App;
