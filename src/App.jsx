@@ -3,6 +3,8 @@ import Navbar from './Components/Navbar';
 import Card from './Components/Card';
 import LineChart from './Components/LineChart';
 import Calendar from './Components/Calendar';
+import PieChart from './Components/PieChart';
+import Sidebar from './Components/Sidebar';
 
 const componentsList = [
   { name: 'Navbar', component: Navbar },
@@ -10,6 +12,8 @@ const componentsList = [
   {name : 'Card', component: Card},
   {name : 'Line Chart', component: LineChart},
   {name : 'Calendar', component: Calendar},
+  {name : 'Pie Chart', component: PieChart},
+  {name : 'Sidebar', component: Sidebar},
 
 ];
 
