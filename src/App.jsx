@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import Navbar from './Components/Navbar';
-// Add other components here as needed
-// e.g., import Component3 from './Components/Component3';
+import Card from './Components/Card';
 
 const componentsList = [
   { name: 'Navbar', component: Navbar },
   {name : 'Notifications Dropdown', component: Navbar},
-  // Add other components here as needed
+  {name : 'Card', component: Card}
 ];
 
 const App = () => {
@@ -14,7 +13,6 @@ const App = () => {
 
   return (
     <div className="p-4">
-      {/* Button Layout */}
       <div className="flex space-x-4 mb-8">
         {componentsList.map(({ name }, index) => (
           <button
@@ -27,7 +25,6 @@ const App = () => {
         ))}
       </div>
 
-      {/* Display Active Component */}
       <div className="p-4 border rounded shadow-md bg-gray-100">
         {activeComponent ? (
           React.createElement(

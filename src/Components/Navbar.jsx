@@ -34,9 +34,9 @@ const Navbar = () => {
 
   const handleDropdownToggle = (dropdownName) => {
     if (activeDropdown === dropdownName) {
-      setActiveDropdown(null); // Close dropdown if it's already open
+      setActiveDropdown(null);
     } else {
-      setActiveDropdown(dropdownName); // Open selected dropdown and close others
+      setActiveDropdown(dropdownName);
     }
   };
 
