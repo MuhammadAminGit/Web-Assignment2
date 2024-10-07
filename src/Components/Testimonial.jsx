@@ -4,7 +4,6 @@ import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
 const Testimonial = ({ name, position, quote, image, rating }) => {
   return (
     <div className="flex items-center justify-between relative p-8 bg-white shadow-lg border-l-4 border-red-500 transition-transform duration-500 ease-in-out">
-      {/* Testimonial Content */}
       <div className="flex-1 pr-8">
         <p className="text-2xl text-gray-700 italic">
           <span className="text-4xl">“</span>{quote}<span className="text-4xl">”</span>
@@ -21,7 +20,6 @@ const Testimonial = ({ name, position, quote, image, rating }) => {
         <h4 className="text-gray-500">{position}</h4>
       </div>
 
-      {/* Placeholder Image */}
       <div className="w-32 h-32 ml-8 rounded-full bg-gray-300 flex-shrink-0">
         <img src={image} className="w-full h-full object-cover rounded-full" />
       </div>

@@ -51,7 +51,6 @@ const TestimonialCarousel = () => {
       </div>
 
       <div className="container mx-auto overflow-hidden">
-        {/* Testimonial Slider */}
         <div className="relative flex w-full transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
           {testimonials.map((testimonial, index) => (
             <div key={index} className="min-w-full">
@@ -60,7 +59,6 @@ const TestimonialCarousel = () => {
           ))}
         </div>
 
-        {/* Navigation Buttons */}
         <div className="flex justify-center mt-8 space-x-4">
           {testimonials.map((_, index) => (
             <button
