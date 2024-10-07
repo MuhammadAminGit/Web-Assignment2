@@ -8,6 +8,7 @@ import Sidebar from './Components/Sidebar';
 import ProfileCard from './Components/ProfileCard';
 import Footer from './Components/Footer';
 import BarChart from './Components/BarChart';
+import TestimonialCarousel from './Components/TestimonialCarousel';
 
 const componentsList = [
   { name: 'Navbar', component: Navbar },
@@ -20,6 +21,7 @@ const componentsList = [
   {name : 'Profile Card', component: ProfileCard},
   {name : 'Footer', component: Footer},
   {name : 'Bar Chart', component: BarChart},
+  {name : 'Testimonial Carousel', component: TestimonialCarousel},
 
 ];
 
