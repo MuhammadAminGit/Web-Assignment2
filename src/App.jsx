@@ -12,10 +12,10 @@ import TestimonialCarousel from './Components/TestimonialCarousel';
 import Menu from './Components/Menu';
 import DashboardTable from './Components/DashboardTable';
 import ContactForm from './Components/ContactForm';
+import MapChart from './Components/MapChart';
 
 const componentsList = [
   { name: 'Navbar', component: Navbar },
-  {name : 'Notifications Dropdown', component: Navbar},
   {name : 'Card', component: Card},
   {name : 'Line Chart', component: LineChart},
   {name : 'Calendar', component: Calendar},
@@ -28,6 +28,7 @@ const componentsList = [
   {name : 'Menu', component: Menu},
   {name : 'Dashboard Table', component: DashboardTable},
   {name : 'Contact Form', component: ContactForm},
+  {name : 'Map Chart', component: MapChart},
 
 ];
 
